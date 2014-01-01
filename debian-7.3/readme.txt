@@ -1,0 +1,22 @@
+
+Ubuntu-12 32 bits.
+
+==============================================================
+
+Inslall NIS:
+
+Copy all other files from "etc" to their places.
+
+$ apt-get install portmap nis autofs
+
+Approve all questions.
+Reboot.
+/etc/init.d/nis start
+/etc/init.d/autofs restart
+Home and users should be available.
+
+==============================================================
+
+apt-get -y install git-core tclsh pidgin libsdl-dev apt-file build-essential libc6-dev-amd64 gdb emacs
+
+(cd /usr/include/gnu/; cp stubs-64.h stubs-32.h)
