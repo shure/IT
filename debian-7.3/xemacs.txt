@@ -1,0 +1,15 @@
+apt-get install libncurses5-dev libxt-dev libxaw7-dev
+
+http://ftp.pt.xemacs.org/packages/xemacs-mule-sumo.tar.bz2
+http://ftp.pt.xemacs.org/packages/xemacs-sumo.tar.bz2
+http://ftp.pt.xemacs.org/xemacs-21.4/xemacs-21.4.22.tar.bz2
+
+Packages install:
+root@petersburg:~/src# ls -al /usr/local/lib/xemacs
+drwxr-sr-x 6 root staff 4096 Jan 26 13:24 .
+drwxrwsr-x 6 root staff 4096 Jan 26 13:10 ..
+drwxr-xr-x 7 root root  4096 Jul 27  2010 mule-packages
+drwxr-sr-x 2 root staff 4096 Jan 26 13:03 site-lisp
+drwxr-sr-x 2 root staff 4096 Jan 26 13:03 site-modules
+drwxr-xr-x 8 root root  4096 Jul 27  2010 xemacs-packages
+
