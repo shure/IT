@@ -15,7 +15,7 @@ Home and users should be available.
 
 ==============================================================
 
-apt-get -y install git-core tclsh pidgin libsdl-dev apt-file build-essential libc6-dev-amd64 gdb emacs
+apt-get -y install git-core tclsh pidgin libsdl-dev apt-file build-essential libc6-dev-amd64 gdb emacs libxp6 libxp-dev
 
 (cd /usr/include/gnu/; cp stubs-64.h stubs-32.h)
 
