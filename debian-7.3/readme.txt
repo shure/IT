@@ -21,5 +21,20 @@ apt-get -y install git-core tcsh pidgin libsdl-dev apt-file build-essential libc
 
 ==============================================================
 
+NVidia driver install:
+
+Add the following line to /etc/apt/sources.list:
+deb http://http.debian.net/debian/ wheezy main contrib non-free
+
+aptitude update
+aptitude -r install linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') nvidia-kernel-dkms
+mkdir /etc/X11/xorg.conf.d
+echo -e 'Section "Device"\n\tIdentifier "My GPU"\n\tDriver "nvidia"\nEndSection' > /etc/X11/xorg.conf.d/20-nvidia.conf
+
+reboot
+
+==============================================================
+
+
 For xemacs:
 Use xemacs/super.el script for defining SUPER key.
